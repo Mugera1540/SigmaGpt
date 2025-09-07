@@ -9,7 +9,17 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 app.use(express.json());
-app.use(cors());
+
+const allowedOrigins = [
+  "http://localhost:5173",          // local frontend (for dev)
+  "https://sigma-gpt-rho.vercel.app/" // your deployed frontend (replace with your actual Vercel URL)
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 app.use("/api",chatRoutes);
 
