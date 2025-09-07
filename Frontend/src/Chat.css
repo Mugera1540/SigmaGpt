@@ -1,0 +1,104 @@
+/* .chats{
+max-width: 700px;
+overflow-y:scroll;
+padding: 8rem;
+}
+.userDiv{
+display: flex;
+justify-content: flex-end;
+font-size: 0.9rem;
+}
+
+.gptDiv{
+    text-align: left;
+    font-size: 0.9rem;
+
+}
+.userMessage{
+    background-color: #323232;
+    padding: 10px 20px;
+    border-radius: 14px;
+    margin-left: 15rem;
+    max-width: 500px;
+    width: fit-content;
+
+}
+.gptMessage{
+    
+
+}
+
+.hljs{
+     border-radius: 14px !important;
+}
+
+pre{
+    white-space:pre-wrap ;
+}
+ */
+
+
+ .chats {
+  width: 100%;
+  max-width: 700px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  overflow-y: auto;
+  padding: 2rem 1rem 1rem 1rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.chats::-webkit-scrollbar{
+    display: none;
+}
+
+
+.userDiv {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.gptDiv {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* Consistent chat bubbles */
+.userMessage, .gptMessage, .gptDiv .hljs {
+  max-width: 70%;
+  word-break: break-word;
+  padding: 12px 18px;
+  border-radius: 16px;
+  font-size: 0.97rem;
+  margin-bottom: 0.3rem;
+}
+
+.userMessage {
+  background-color: #323232;
+  color: #fff;
+  margin-left: auto;
+}
+
+.gptMessage,
+.gptDiv .hljs {
+  background-color: #161a1a;
+  color: #e3e3e3;
+  margin-right: auto;
+}
+
+/* Code block styling for markdown */
+.hljs {
+  border-radius: 14px !important;
+  background: #23272f !important;
+  padding: 16px;
+}
+
+pre {
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
