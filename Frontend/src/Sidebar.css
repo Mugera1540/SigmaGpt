@@ -41,7 +41,9 @@ button{
     padding: 10px;
     height: 100%;
   }
-
+.history::-webkit-scrollbar{
+  display: none;
+}
   .history li{
     list-style-type:none ;
     cursor: pointer;
