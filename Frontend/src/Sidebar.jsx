@@ -10,7 +10,7 @@ function Sidebar(){
  const getAllThread=async()=>{
   try{
   //  const response=await fetch("http://localhost:8080/api/thread")
-   const response = await fetch("https://sigmagpt-fl54.onrender.com/api/thread",options)
+   const response = await fetch("https://sigmagpt-fl54.onrender.com/api/thread")
 
   const res=await response.json();
   const filteredData=res.map(thread=>({threadId:thread.threadId,title:thread.title}))
