@@ -1,4 +1,4 @@
-/* .sidebar{
+ .sidebar{
     background-color: #171717;
     color: #b4b4b4;
     height:100vh ;
@@ -78,12 +78,21 @@ button{
   }
   .fa-trash:hover{
     color: red !important;
-  } */
+  } 
+    
+  .sign {
+  padding: 10px;
+  margin: 10px;
+  font-size: 14px;
+  text-align: center;
+  border-top: solid 0.25px rgba(255, 255, 255, 0.5);
+}
+ .highlighted{
+  background-color: rgba(180, 180, 180, 0.05);
+  border-radius: 10px;
+ }
 
-
-
-
-
+/* 
   .sidebar {
   background-color: #171717;
   color: #b4b4b4;
@@ -132,7 +141,7 @@ button:hover {
   flex: 1 1 auto;
   overflow-y: auto;
 
-  /* add height: 0 and flex property if scrolling is needed */
+  
 }
 
 .history::-webkit-scrollbar{
@@ -182,4 +191,4 @@ button:hover {
  .highlighted{
   background-color: rgba(180, 180, 180, 0.05);
   border-radius: 10px;
- }
+ } */

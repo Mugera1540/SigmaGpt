@@ -1,4 +1,4 @@
-/* .chats{
+ .chats{
 max-width: 700px;
 overflow-y:scroll;
 padding: 8rem;
@@ -23,10 +23,7 @@ font-size: 0.9rem;
     width: fit-content;
 
 }
-.gptMessage{
-    
 
-}
 
 .hljs{
      border-radius: 14px !important;
@@ -35,10 +32,10 @@ font-size: 0.9rem;
 pre{
     white-space:pre-wrap ;
 }
- */
+ 
 
 
- .chats {
+ /* .chats {
   width: 100%;
   max-width: 700px;
   flex: 1 1 auto;
@@ -67,7 +64,7 @@ pre{
   width: 100%;
 }
 
-/* Consistent chat bubbles */
+
 .userMessage, .gptMessage, .gptDiv .hljs {
   max-width: 70%;
   word-break: break-word;
@@ -90,7 +87,7 @@ pre{
   margin-right: auto;
 }
 
-/* Code block styling for markdown */
+
 .hljs {
   border-radius: 14px !important;
   background: #23272f !important;
@@ -101,4 +98,4 @@ pre {
   white-space: pre-wrap;
   overflow-x: auto;
 }
-
+ */
