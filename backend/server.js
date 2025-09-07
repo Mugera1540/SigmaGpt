@@ -12,7 +12,7 @@ app.use(express.json());
 
 const allowedOrigins = [
   "http://localhost:5173",          // local frontend (for dev)
-  "https://sigma-gpt-rho.vercel.app/" // your deployed frontend (replace with your actual Vercel URL)
+  "https://sigma-gpt-rho.vercel.app" // your deployed frontend (replace with your actual Vercel URL)
 ];
 
 app.use(cors({
