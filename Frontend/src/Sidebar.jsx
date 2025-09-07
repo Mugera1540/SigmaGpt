@@ -9,7 +9,9 @@ function Sidebar(){
 
  const getAllThread=async()=>{
   try{
-   const response=await fetch("http://localhost:8080/api/thread")
+  //  const response=await fetch("http://localhost:8080/api/thread")
+   const response = await fetch("https://sigmagpt-fl54.onrender.com/api/thread",options)
+
   const res=await response.json();
   const filteredData=res.map(thread=>({threadId:thread.threadId,title:thread.title}))
   setAllThreads(filteredData);
@@ -38,7 +40,9 @@ function Sidebar(){
  const changeThread= async (newThreadid)=>{
  setCurrThreadId(newThreadid);
  try{
-  const response=await fetch(`http://localhost:8080/api/thread/${newThreadid}`);
+  // const response=await fetch(`http://localhost:8080/api/thread/${newThreadid}`);
+
+  const response = await fetch(`https://sigmagpt-fl54.onrender.com/api/thread/${newThreadid}`)
   const res=await response.json();
   //console.log(res);
   setPrevChat(res);
@@ -55,7 +59,9 @@ function Sidebar(){
 
  const  deleteThread=async (threadId)=>{
   try{
-   const response=await fetch(`http://localhost:8080/api/thread/${threadId}`,{method:"DELETE"});
+  //  const response=await fetch(`http://localhost:8080/api/thread/${threadId}`,{method:"DELETE"});
+   const response = await fetch(`https://sigmagpt-fl54.onrender.com/api/thread/${threadId}`,{method:"DELETE"});
+
   const res=await response.json();
   console.log(res);
 
